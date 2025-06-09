@@ -1,11 +1,17 @@
 ---
+import Navigation from "../components/Navigation.astro";
 import Layout from "../layouts/Layout.astro";
+import Footer from '../components/Footer.astro';
+import "../styles/global.css";
 ---
 
 <Layout>
+  <Navigation />
   <ul>
     <li><a href="/posts/post-1/">文章 1</a></li>
     <li><a href="/posts/post-2/">文章 2</a></li>
     <li><a href="/posts/post-3/">文章 3</a></li>
   </ul>
+
+  <Footer />
 </Layout>

@@ -1,6 +1,8 @@
 ---
+import Navigation from "../components/Navigation.astro";
 import Layout from "../layouts/Layout.astro";
-import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+import "../styles/global.css";
 
 const pageTitle = "关于我";
 
@@ -19,6 +21,7 @@ const goal = 3;
 ---
 
 <Layout>
+  <Navigation />
   <h1>Astro About</h1>
   <h1>{pageTitle}</h1>
 
@@ -44,4 +47,6 @@ const goal = 3;
   {finished && <p>我完成了这节教程！</p>}
 
   {goal === 3 ? <p>我的目标是在三天内完成。</p> : <p>我的目标不是 3 天。</p>}
+
+  <Footer />
 </Layout>
